@@ -1,0 +1,35 @@
+body{
+    background-color: lightblue;
+}
+
+.contenedor{
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,3fr);/*dos coluumnas */
+    gap: 20px;
+}
+.caja{
+    background-color:aquamarine;
+    padding: 40px;
+    border-radius: 10px;
+}
+.imagen{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+
+}
+@media(max-width:600px){
+    .contenedor{
+        grid-template-columns: 1fr;/*una columna */
+    }
+    .caja{
+        background-color: yellow;
+    }
+}
+@media (max-width:1024px)and (min-width:768px){
+    .contenedor{
+        grid-template-columns: repeat(3,1fr);
+        background-color: orange;
+    }
+}
